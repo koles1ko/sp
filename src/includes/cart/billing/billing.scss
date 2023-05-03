@@ -1,0 +1,19 @@
+.billing-methods {
+	gap: 80px;
+	margin-top: 43px;
+}
+.billing-method {
+	label {
+		gap: 14px;
+		&.p-small {
+			gap: 9px;
+		}
+	}
+}
+
+@media (screen and max-width: 480px) {
+	.billing-methods {
+		gap: 22px;
+		margin-top: 23px;
+	}
+}

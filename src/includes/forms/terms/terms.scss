@@ -1,0 +1,14 @@
+.terms {
+	margin-top: 40px;
+	> div + div {
+		margin-top: 12px;
+	}
+	label {
+		color: var(--checkbox-label-color);
+		display: block;
+	}
+	a {
+		text-decoration: none;
+		color: var(--black);
+	}
+}

@@ -1,0 +1,64 @@
+<div class="card-form__body">
+	<div class="card-form__row card-form-input">
+		<label>
+			<span class="card-form__title">
+				Name on card
+			</span>
+			<input
+				type="text"
+				name="name"
+				placeholder="Placeholder Text"
+			>
+		</label>
+	</div>
+	<div class="card-form__row card-form-input card-form-input_short">
+		<label>
+			<span class="card-form__title">
+				Card number
+			</span>
+			<span class="d-f ai-c card-form-input__number-row g-30">
+			<input
+				type="text"
+				name="card-number"
+			>
+			<input
+				type="text"
+				name="card-number"
+			>
+			<input
+				type="text"
+				name="card-number"
+			>
+			<input
+				type="text"
+				name="card-number"
+			>
+			</span>
+		</label>
+	</div>
+	<div class="card-form__row card-form-input card-form-input_short d-f g-30">
+		<label>
+			<span class="card-form__title">
+				Expire date
+			</span>
+			<input
+				type="text"
+				name="date"
+			>
+		</label>
+
+		<label>
+			<span class="card-form__title">
+				CVV code
+				<span
+					class="card-form__tips"
+					title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, voluptas.">?</span>
+			</span>
+
+			<input
+				type="text"
+				name="cvv"
+			>
+		</label>
+	</div>
+</div>

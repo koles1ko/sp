@@ -22,5 +22,47 @@
 			"title": "Item 2",
 			"text": "Desc 2"
 		}
+	],
+	"cartStages": [
+		{
+			"status": "completed",
+			"title": "Account"
+		},
+		{
+			"status": "completed",
+			"title": "Shipping"
+		},
+		{
+			"status": "active",
+			"title": "Billing"
+		},
+		{
+			"status": "none",
+			"title": "Review"
+		}
+	],
+	"billingMethods": [
+		{
+			"type": "card",
+			"title": "Pay with Credit Card"
+		},
+		{
+			"type": "paypal",
+			"iconName": "paypal"
+		}
+	],
+	"goods": [
+		{
+			"name": "Amet minim mollit non deserunt ullamco est sit",
+			"price": 525,
+			"pictureName": "1.jpg",
+			"count": 1
+		},
+		{
+			"name": "Amet minim mollit non",
+			"price": 525,
+			"pictureName": "2.jpg",
+			"count": 1
+		}
 	]
 }

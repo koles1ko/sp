@@ -15,6 +15,7 @@ class ProjectApp {
 		this.utils = require('./utils/utils').default;
 		this.classes = {
 			// Signal: require('./classes/Signal').default,
+			Cart: require('./classes/Cart').default,
 		};
 		this.components = {};
 		this.helpers = {};
@@ -30,3 +31,14 @@ global.ProjectApp = new ProjectApp();
 if (module.hot) {
 	module.hot.accept();
 }
+
+console.log(global.ProjectApp);
+
+window.addEventListener('DOMContentLoaded', () => {
+	new global.ProjectApp.classes.Cart().init();
+	const burger = document.querySelector('.header__toggle-cart');
+	const cart = document.querySelector('.cart-right-side');
+	burger.addEventListener('click', () => {
+		cart.classList.toggle('opened');
+	});
+});

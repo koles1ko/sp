@@ -1,0 +1,38 @@
+{% macro goodItem(itemData) %}
+<div class="goods-item d-f ai-s p-r">
+	<div class="goods-item__picture d-f ai-c jc-c">
+		<img src="assets/images/goods/{{ itemData.pictureName }}" alt="{{ itemData.name }}">
+	</div>
+	<div class="goods-item__info d-f fd-c jc-sb">
+		<div class="goods-item__name">
+			{{ itemData.name }}
+		</div>
+		<div class="d-f jc-sb ai-c">
+			<div class="goods-item__count d-f">
+				<div class="goods-item__dec p-r">
+					<span class="p-a"></span>
+				</div>
+				<div class="goods-item__current">
+					<input
+						size="1"
+						onkeydown="size=value.length||1"
+						type="text"
+						value="{{ itemData.count }}"
+						data-name="count">
+				</div>
+				<div class="goods-item__inc p-r">
+					<span class="p-a"></span>
+					<span class="p-a"></span>
+				</div>
+			</div>
+			<div class="goods-item__price" data-price="{{ itemData.price }}">
+				$ {{ itemData.price }}
+			</div>
+		</div>
+	</div>
+	<div class="goods-item__remove p-a">
+		<span></span>
+		<span></span>
+	</div>
+</div>
+{% endmacro %}

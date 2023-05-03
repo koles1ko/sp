@@ -7,10 +7,21 @@
 {# Например можно использовать для добавления уникальных тайтлов для каждой страницы #}
 {# {% block title %}Home / {{ super() }}{% endblock title %} #}
 
+
 {% block content %}
 
 	{% include '../includes/header/header.nunj' %}
-
+	<main class="main">
+	<div class="container container-cart">
+		<div class="d-f jc-sb p-r" style="height: 100%">
+			<div class="cart-main">
+				{% include '../includes/cart/main/main.nunj' %}
+			</div>
+			{% include '../includes/cart/right-side/right-side.nunj' %}
+		</div>
+	</div>
+	</main>
+	{#
 	<div class="container">
 
 		<div style="padding:20px 0;">
@@ -23,7 +34,7 @@
 
 		<div style="padding:20px 0;">
 
-			<h2 style="margin-bottom: 15px;">Пример использования циклов и функции range():</h2>
+			<h2 style="margin-bottom: 15px;">Пример использования циклов и функции range(): </h2>
 
 			<div class="row">
 				{% for i in range(1, 13)  %}
@@ -47,26 +58,28 @@
 		</div>
 
 		{# Пример с функциями #}
-		<p style="margin-bottom: 20px;">{{ addAwesome('Это текст для теста функций') }}</p>
+	{#
+	<p style="margin-bottom: 20px;">{{ addAwesome('Это текст для теста функций') }}</p>
 
-		{% if DEVELOP %}
-			<div class="debug" style="margin-bottom: 20px;">
-				<h2 style="margin-bottom: 15px;">Debug:</h2>
-				<p>Эта информация будет выводиться только при DEVELOP = true.</p>
-			</div>
-		{% endif %}
-
-		<div style="padding:20px 0;">
-
-			<h2 style="margin-bottom: 15px;">Пример использования SVG-спрайта</h2>
-
-			{{ icon({
-				iconName: 'chat',
-				className: 'icon',
-				attributes: 'viewBox="0 0 20 20" style="width: 40px; height: 40px; fill: #212121;"'
-			}) }}
-
+	{% if DEVELOP %}
+		<div class="debug" style="margin-bottom: 20px;">
+			<h2 style="margin-bottom: 15px;">Debug:</h2>
+			<p>Эта информация будет выводиться только при DEVELOP = true.</p>
 		</div>
+	{% endif %}
+
+	<div style="padding:20px 0;">
+
+		<h2 style="margin-bottom: 15px;">Пример использования SVG-спрайта</h2>
+
+		{{ icon({
+			iconName: 'chat',
+			className: 'icon',
+			attributes: 'viewBox="0 0 20 20" style="width: 40px; height: 40px; fill: #212121;"'
+		}) }}
 
 	</div>
+
+</div>
+	#}
 {% endblock %}

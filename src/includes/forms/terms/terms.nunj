@@ -1,0 +1,26 @@
+<div class="terms">
+	<div class="">
+		<input
+			id="save-info"
+			type="checkbox"
+			name="save-info">
+		<label
+			for="save-info"
+			class="form-checkbox"
+		>
+			Save information of this credit card
+		</label>
+	</div>
+	<div class="">
+		<input
+			id="policy"
+			type="checkbox"
+			name="policy">
+		<label
+			for="policy"
+			class="form-checkbox"
+		>
+			I accept the <a href="#">terms and comditions</a> and the <a href="#">Privacy Policies</a>
+		</label>
+	</div>
+</div>

@@ -3,16 +3,27 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	border: 2px solid rgba(#000, 0.3);
-	height: 54px;
-	font-weight: 700;
+	border: 1px solid var(--border-color);
+	border-radius: 3px;
+	//height: 54px;
+	//font-weight: 700;
 	cursor: pointer;
-	font-size: 16px;
-	letter-spacing: -0.5px;
-	padding: 1px 20px 0;
+	//font-size: 16px;
+	//letter-spacing: -0.5px;
+	padding: 8px 30px;
+	background-color: transparent;
+	&.accent {
+		background-color: var(--accent);
+		color: var(--white);
+		border-color: var(--accent);
+		&:hover {
+			background-color: rgba(#3366ff, 0.8);
+			color: var(--white);
+		}
+	}
 
 	&:hover {
-		background-color: rgba(#000, 0.3);
+		background-color: rgba(#000, 0.1);
 		color: rgba(#000, 0.8);
 		transition: none;
 	}

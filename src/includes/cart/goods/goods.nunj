@@ -1,0 +1,7 @@
+{% from '../../../components/goods-item/goods-item.nunj' import goodItem %}
+
+<div class="cart-items">
+	{% for itemData in goods %}
+		{{ goodItem(itemData) }}
+	{% endfor %}
+</div>

@@ -1,0 +1,15 @@
+{% from "../../../components/button/button.nunj" import button %}
+
+	<h3>Promo code</h3>
+	<form class="cart-promo__form">
+		<div class="d-f">
+			<div class="cart-promo__input card-form-input">
+				<input type="text" name="promo" placeholder="Placeholder Text">
+			</div>
+			{{ button({
+				className: 'cart-promo__button accent',
+				children: 'Apply',
+				chevronRight: false
+			}) }}
+		</div>
+	</form>

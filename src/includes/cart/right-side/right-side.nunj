@@ -1,0 +1,16 @@
+<div class="cart-right-side">
+	<div class="cart-basket p-r">
+		<h3>My basket</h3>
+		{% include '../goods/goods.nunj' %}
+	</div>
+	<div class="cart-promo p-r">
+		{% include '../promo/promo.nunj' %}
+	</div>
+	<div class="cart-total">
+		{% include '../total/total.nunj' %}
+	</div>
+</div>
+
+<style>
+
+</style>

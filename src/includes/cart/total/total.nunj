@@ -1,0 +1,27 @@
+<div data-name="subtotal" class="cart-total__row d-f jc-sb ai-c">
+	<div class="cart-total__property">Subtotal</div>
+	<div class="cart-total__value">
+		$<span></span>
+	</div>
+</div>
+<div data-name="tax" class="cart-total__row d-f jc-sb ai-c">
+	<div class="cart-total__property">Tax</div>
+	<div class="cart-total__value">
+		$<span></span>
+	</div>
+</div>
+<div data-name="shipping" class="cart-total__row d-f jc-sb ai-c">
+	<div class="cart-total__property">Shipping</div>
+	<div class="cart-total__value">
+		$<span></span>
+	</div>
+</div>
+<div data-name="total" class="cart-total__row d-f jc-sb ai-c">
+	<div class="cart-total__property">Total</div>
+	<div class="cart-total__value">
+		$<span></span>
+	</div>
+</div>
+
+
+

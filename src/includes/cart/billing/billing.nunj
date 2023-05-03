@@ -1,0 +1,29 @@
+<div class="billing">
+	<h3>Billing Information</h3>
+	<div class="billing-methods d-f ai-c">
+
+		{% for method in billingMethods %}
+		<div class="billing-method ">
+			<input
+				id="{{ method.type }}"
+				type="radio"
+				name="billing-method">
+			<label
+				for="{{ method.type }}"
+				class="p-r d-f ai-c form-radio {% if method.title %} p-small {% endif %}"
+			>
+				{% if method.title %}
+					{{ method.title }}
+				{% endif %}
+				{% if method.iconName %}
+					{{ icon({
+						iconName: method.iconName,
+						attr: 'viewBox="0 0 85 23" style="width: 85px; height: 23px;"'
+					}) }}
+				{% endif %}
+			</label>
+		</div>
+		{% endfor %}
+	</div>
+</div>
+

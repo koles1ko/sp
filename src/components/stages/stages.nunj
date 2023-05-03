@@ -1,0 +1,13 @@
+{% macro stages(className, data) %}
+	<ul class="stages {{ className }}">
+		{% for stage in data %}
+			<li class="{{ stage.status }} d-f ai-c jc-c" >
+				<span class="stages__number ">{{ loop.index }}</span>
+				<span class="stages__title">{{ stage.title }}</span>
+			</li>
+			{% if loop.index != loop.length %}
+				<li class="stages__row"></li>
+			{% endif %}
+		{%  endfor %}
+	</ul>
+{% endmacro %}

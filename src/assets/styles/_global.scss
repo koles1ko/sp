@@ -89,3 +89,35 @@
 	overflow-y: auto;
 	-webkit-overflow-scrolling: touch;
 }
+
+.d-f {
+	display: flex;
+}
+
+.ai-c {
+	align-items: center;
+}
+
+.ai-s {
+	align-items: stretch;
+}
+
+.jc-c {
+	justify-content: center;
+}
+
+.jc-sb {
+	justify-content: space-between;
+}
+
+.fd-c {
+	flex-direction: column;
+}
+
+.p-r {
+	position: relative;
+}
+
+.p-a {
+	position: absolute;
+}

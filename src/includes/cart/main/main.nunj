@@ -1,0 +1,15 @@
+{% from "../../../components/stages/stages.nunj" import stages %}
+
+ {{ stages("cart-stages", cartStages) }}
+
+<div class="card-form">
+
+	{% include '../billing/billing.nunj' %}
+
+	{% include '../../forms/card-form/card-form.nunj' %}
+
+	{% include '../../forms/terms/terms.nunj' %}
+
+	{% include '../controls/controls.nunj' %}
+
+</div>

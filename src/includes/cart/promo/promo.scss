@@ -1,0 +1,14 @@
+.cart-promo {
+	&__form {
+		margin-top: 30px;
+	}
+	.d-f {
+		gap: 10px;
+	}
+	&__input {
+		flex-grow: 1;
+		input {
+			height: 100%;
+		}
+	}
+}

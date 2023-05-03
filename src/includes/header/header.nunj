@@ -1,7 +1,34 @@
-{% from "../../components/menu/menu.nunj" import menu %}
-
-<div class="header">
+<header class="header">
 	<div class="container">
-		{{ menu() }}
+		<div class=" d-f jc-sb ai-c">
+			<div class="header__logo">
+				<a href="/">
+					{{ icon({
+						iconName: 'Logo',
+						attr: 'viewBox="0 0 89 32" style="width: 89px; height: 32px;"'
+					}) }}
+				</a>
+			</div>
+			<div class="header__actions d-f">
+				<div class="header__search">
+					{{ icon({
+						iconName: 'search',
+						attr: 'viewBox="0 0 24 24" style="width: 24px; height: 24px;"'
+					}) }}
+				</div>
+				<div class="header__cart p-r">
+					{{ icon({
+						iconName: 'cart',
+						attr: 'viewBox="0 0 24 21" style="width: 24px; height: 21px;"'
+					}) }}
+					<div class="header__goods-count p-a d-f ai-c jc-c">
+						2
+					</div>
+				</div>
+				<div class="header__toggle-cart p-r">
+					<span class="p-a"></span><span class="p-a"></span><span class="p-a"></span>
+				</div>
+			</div>
+		</div>
 	</div>
-</div>
+</header>

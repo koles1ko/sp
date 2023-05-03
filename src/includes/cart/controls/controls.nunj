@@ -1,0 +1,14 @@
+{% from "../../../components/button/button.nunj" import button %}
+<div class="cart-controls d-f jc-sb">
+	{{ button({
+		className: '',
+		children: 'Back',
+		chevronRight: false
+	}) }}
+
+	{{ button({
+		className: 'accent',
+		children: 'Check Out',
+		chevronRight: false
+	}) }}
+</div>

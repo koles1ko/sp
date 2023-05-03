@@ -1,17 +1,26 @@
 // ======= GLOBAL =======
+@import 'vars';
 @import 'constants';
 @import 'lib/base';
 @import 'fonts';
 @import 'reset';
 @import 'global';
 @import 'layout';
-// @import 'controls';
+@import 'controls';
 
 // ======= COMPONENTS =======
 @import '../../components/button/button';
+@import '../../components/stages/stages';
+@import '../../components/goods-item/goods-item';
 
 // ======= INCLUDES =======
 @import '../../includes/header/header';
+@import '../../includes/cart/main/main';
+@import '../../includes/cart/billing/billing';
+@import '../../includes/cart/right-side/right-side';
+@import '../../includes/cart/promo/promo';
+@import '../../includes/forms/card-form/card-form';
+@import '../../includes/forms/terms/terms';
 
 // ======= PAGES =======
 @import 'pages/main';

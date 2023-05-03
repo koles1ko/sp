@@ -29,3 +29,88 @@
 .i-checkbox {
 	position: relative;
 }
+
+.form-radio,
+.form-checkbox {
+	position: relative;
+	padding-left: 32px;
+	&:hover {
+		cursor: pointer;
+	}
+	&::before {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: calc(50% - 9px);
+		width: 18px;
+		height: 18px;
+		display: block;
+		border-radius: 50%;
+		border: 1px solid var(--border-color);
+	}
+	&::after {
+		content: '';
+		position: absolute;
+		width: 8px;
+		height: 8px;
+		border-radius: 50%;
+		background-color: var(--accent);
+		top: calc(50% - 3px);
+		left: 6px;
+		display: none;
+	}
+}
+
+.form-checkbox {
+	&::before {
+		top: -1px;
+	}
+	&::after {
+		top: 5px;
+	}
+}
+
+.form-checkbox {
+	&::before,
+	&::after {
+		border-radius: 0;
+	}
+}
+
+input[type='radio'],
+input[type='checkbox'] {
+	position: absolute;
+	width: 0;
+	height: 0;
+	z-index: -100;
+	appearance: none;
+	pointer-events: none;
+}
+
+input[type='radio']:checked + label,
+input[type='checkbox']:checked + label {
+	&::after {
+		display: block;
+	}
+}
+
+.card-form-input {
+	&_short {
+		input {
+			max-width: 100px;
+			width: 100%;
+		}
+	}
+	input {
+		padding: 8px 10px;
+		background-color: var(--input-bg);
+		border-radius: 3px;
+		border: none;
+		outline: none;
+		display: block;
+		width: 100%;
+		&::placeholder {
+			color: var(--placeholder-color);
+		}
+	}
+}
