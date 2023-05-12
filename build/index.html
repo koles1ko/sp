@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <script type="text/javascript">!function(){function e(e){return r.indexOf(e)>-1}function o(e){return a.indexOf(e)>-1}function n(e){return s.indexOf(e)>-1}var i=[],t=navigator,r=t.platform.toLowerCase(),a=t.userAgent.toLowerCase(),s=t.appName.toLowerCase(),d=document.documentElement,c=(localStorage,o("iphone")||o("ipod")||o("ipad")||o("android")||o("iemobile")||o("blackberry")||o("bada")?"_mobile":"_desktop");i.push(c);var m="";o("ipad")||o("iphone")||o("ipod")?m="_ios":o("android")?m="_android":e("win")?m="_win":e("mac")?m="_mac":e("linux")&&(m="_linux"),i.push(m);var u="";o("firefox")?u="_ff":o("opr")?u="_opera":o("yabrowser")?u="_yandex":o("edge")?u="_edge":o("trident")||n("explorer")||n("msie")?u="_ie":o("safari")&&!o("chrome")?u="_safari":o("chrome")&&(u="_chrome"),i.push(u),window.environmentObject={platform:c,os:m,browser:u,isLocal:0==window.location.href.indexOf("http://localhost:")},d.className+=" "+i.join(" ");var l=new XMLHttpRequest;l.open("GET","assets/svg/sprite.svg",!0),l.overrideMimeType("image/svg+xml"),l.onreadystatechange=function(){function e(){if(document.body){var o=document.querySelector(".invisible-container");o||(o=document.createElement("div"),o.className="invisible-container",document.body.insertBefore(o,document.body.firstChild)),o.appendChild(l.responseXML.documentElement)}else setTimeout(e,16)}l.readyState===XMLHttpRequest.DONE&&200===l.status&&e()},l.send("")}();</script>
+
+    <link rel="stylesheet" href="assets/css/styles.css?ed7c11c7aba75c2b7df3b8ca458913fa" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <header class="header">
+            <div class="container">
+                <div class=" d-f jc-sb ai-c">
+                    <div class="header__logo">
+                        <a href="/">
+                            <svg viewBox="0 0 89 32" style="width: 89px; height: 32px;">
+                                <use xlink:href="#icon-Logo" />
+                            </svg>
+
+                        </a>
+                    </div>
+                    <div class="header__actions d-f">
+                        <div class="header__search">
+                            <svg viewBox="0 0 24 24" style="width: 24px; height: 24px;">
+                                <use xlink:href="#icon-search" />
+                            </svg>
+
+                        </div>
+                        <div class="header__cart p-r">
+                            <svg viewBox="0 0 24 21" style="width: 24px; height: 21px;">
+                                <use xlink:href="#icon-cart" />
+                            </svg>
+
+                            <div class="header__goods-count p-a d-f ai-c jc-c">
+                                2
+                            </div>
+                        </div>
+                        <div class="header__toggle-cart p-r">
+                            <span class="p-a"></span><span class="p-a"></span><span class="p-a"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="container container-cart">
+                <div class="d-f jc-sb p-r" style="height: 100%">
+                    <div class="cart-main">
+
+                        <ul class="stages cart-stages">
+                            <li class="completed d-f ai-c jc-c">
+                                <span class="stages__number ">1</span>
+                                <span class="stages__title">Account</span>
+                            </li>
+                            <li class="stages__row"></li>
+                            <li class="completed d-f ai-c jc-c">
+                                <span class="stages__number ">2</span>
+                                <span class="stages__title">Shipping</span>
+                            </li>
+                            <li class="stages__row"></li>
+                            <li class="active d-f ai-c jc-c">
+                                <span class="stages__number ">3</span>
+                                <span class="stages__title">Billing</span>
+                            </li>
+                            <li class="stages__row"></li>
+                            <li class="none d-f ai-c jc-c">
+                                <span class="stages__number ">4</span>
+                                <span class="stages__title">Review</span>
+                            </li>
+                        </ul>
+
+                        <div class="card-form">
+
+                            <div class="billing">
+                                <h3>Billing Information</h3>
+                                <div class="billing-methods d-f ai-c">
+
+                                    <div class="billing-method ">
+                                        <input id="card" type="radio" name="billing-method">
+                                        <label for="card" class="p-r d-f ai-c form-radio  p-small ">
+                                            Pay with Credit Card
+                                        </label>
+                                    </div>
+                                    <div class="billing-method ">
+                                        <input id="paypal" type="radio" name="billing-method">
+                                        <label for="paypal" class="p-r d-f ai-c form-radio ">
+                                            <svg viewBox="0 0 85 23" style="width: 85px; height: 23px;">
+                                                <use xlink:href="#icon-paypal" />
+                                            </svg>
+
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-form__body">
+                                <div class="card-form__row card-form-input">
+                                    <label>
+                                        <span class="card-form__title">
+                                            Name on card
+                                        </span>
+                                        <input type="text" name="name" placeholder="Placeholder Text">
+                                    </label>
+                                </div>
+                                <div class="card-form__row card-form-input card-form-input_short">
+                                    <label>
+                                        <span class="card-form__title">
+                                            Card number
+                                        </span>
+                                        <span class="d-f ai-c card-form-input__number-row g-30">
+                                            <input type="text" name="card-number">
+                                            <input type="text" name="card-number">
+                                            <input type="text" name="card-number">
+                                            <input type="text" name="card-number">
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="card-form__row card-form-input card-form-input_short d-f g-30">
+                                    <label>
+                                        <span class="card-form__title">
+                                            Expire date
+                                        </span>
+                                        <input type="text" name="date">
+                                    </label>
+
+                                    <label>
+                                        <span class="card-form__title">
+                                            CVV code
+                                            <span class="card-form__tips" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, voluptas.">?</span>
+                                        </span>
+
+                                        <input type="text" name="cvv">
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="terms">
+                                <div class="">
+                                    <input id="save-info" type="checkbox" name="save-info">
+                                    <label for="save-info" class="form-checkbox">
+                                        Save information of this credit card
+                                    </label>
+                                </div>
+                                <div class="">
+                                    <input id="policy" type="checkbox" name="policy">
+                                    <label for="policy" class="form-checkbox">
+                                        I accept the <a href="#">terms and comditions</a> and the <a href="#">Privacy Policies</a>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="cart-controls d-f jc-sb">
+                                <button class="button">
+                                    Back
+                                </button>
+
+                                <button class="button accent">
+                                    Check Out
+                                </button>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="cart-right-side">
+                        <div class="cart-basket p-r">
+                            <h3>My basket</h3>
+
+                            <div class="cart-items">
+                                <div class="goods-item d-f ai-s p-r">
+                                    <div class="goods-item__picture d-f ai-c jc-c">
+                                        <img src="assets/images/goods/1.jpg" alt="Amet minim mollit non deserunt ullamco est sit">
+                                    </div>
+                                    <div class="goods-item__info d-f fd-c jc-sb">
+                                        <div class="goods-item__name">
+                                            Amet minim mollit non deserunt ullamco est sit
+                                        </div>
+                                        <div class="d-f jc-sb ai-c">
+                                            <div class="goods-item__count d-f">
+                                                <div class="goods-item__dec p-r">
+                                                    <span class="p-a"></span>
+                                                </div>
+                                                <div class="goods-item__current">
+                                                    <input size="1" onkeydown="size=value.length||1" type="text" value="1" data-name="count">
+                                                </div>
+                                                <div class="goods-item__inc p-r">
+                                                    <span class="p-a"></span>
+                                                    <span class="p-a"></span>
+                                                </div>
+                                            </div>
+                                            <div class="goods-item__price" data-price="525">
+                                                $ 525
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="goods-item__remove p-a">
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+
+                                <div class="goods-item d-f ai-s p-r">
+                                    <div class="goods-item__picture d-f ai-c jc-c">
+                                        <img src="assets/images/goods/2.jpg" alt="Amet minim mollit non">
+                                    </div>
+                                    <div class="goods-item__info d-f fd-c jc-sb">
+                                        <div class="goods-item__name">
+                                            Amet minim mollit non
+                                        </div>
+                                        <div class="d-f jc-sb ai-c">
+                                            <div class="goods-item__count d-f">
+                                                <div class="goods-item__dec p-r">
+                                                    <span class="p-a"></span>
+                                                </div>
+                                                <div class="goods-item__current">
+                                                    <input size="1" onkeydown="size=value.length||1" type="text" value="1" data-name="count">
+                                                </div>
+                                                <div class="goods-item__inc p-r">
+                                                    <span class="p-a"></span>
+                                                    <span class="p-a"></span>
+                                                </div>
+                                            </div>
+                                            <div class="goods-item__price" data-price="525">
+                                                $ 525
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="goods-item__remove p-a">
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="cart-promo p-r">
+
+                            <h3>Promo code</h3>
+                            <form class="cart-promo__form">
+                                <div class="d-f">
+                                    <div class="cart-promo__input card-form-input">
+                                        <input type="text" name="promo" placeholder="Placeholder Text">
+                                    </div>
+                                    <button class="button cart-promo__button accent">
+                                        Apply
+                                    </button>
+
+                                </div>
+                            </form>
+                        </div>
+                        <div class="cart-total">
+                            <div data-name="subtotal" class="cart-total__row d-f jc-sb ai-c">
+                                <div class="cart-total__property">Subtotal</div>
+                                <div class="cart-total__value">
+                                    $<span></span>
+                                </div>
+                            </div>
+                            <div data-name="tax" class="cart-total__row d-f jc-sb ai-c">
+                                <div class="cart-total__property">Tax</div>
+                                <div class="cart-total__value">
+                                    $<span></span>
+                                </div>
+                            </div>
+                            <div data-name="shipping" class="cart-total__row d-f jc-sb ai-c">
+                                <div class="cart-total__property">Shipping</div>
+                                <div class="cart-total__value">
+                                    $<span></span>
+                                </div>
+                            </div>
+                            <div data-name="total" class="cart-total__row d-f jc-sb ai-c">
+                                <div class="cart-total__property">Total</div>
+                                <div class="cart-total__value">
+                                    $<span></span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <style>
+
+                    </style>
+                </div>
+            </div>
+        </main>
+
+    </div>
+
+    <script src="assets/js/bundle.js?c5a89c9d42cf159e865126b47d219fb0"></script>
+</body>
+
+</html>
